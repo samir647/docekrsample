@@ -12,10 +12,11 @@ RUN mvn -f pom.xml clean package
 
 #default command
 
-COPY /event-api/target/event-api-0.0.1-SNAPSHOT.jar /data/event-api-0.0.1-SNAPSHOT.jar
-
 FROM openjdk:11-jre-slim
 
+COPY  /tmp/target/event-api-0.0.1-SNAPSHOT.jar  /home/usr/event.jar
 
 EXPOSE 8080
-ENTRYPOINT ["java","-jar","data/event-api-0.0.1-SNAPSHOT.jar"]
+
+#CMD ls -la
+ENTRYPOINT ["java","-jar","/home/usr/event.jar"]
