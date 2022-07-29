@@ -3,10 +3,9 @@ COPY /event-api/pom.xml /tmp/
 COPY /event-api/src /tmp/src/
 WORKDIR /tmp/
 
-RUN  groupadd docker
-RUN  usermod -aG docker $USER
 
-RUN sudo addgroup -S docker && adduser -S juser -G docker
+
+RUN  addgroup -S docker && adduser -S juser -G docker
 
 USER juser
 
