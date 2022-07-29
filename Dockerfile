@@ -1,6 +1,6 @@
 FROM maven:3.8.5-openjdk-11 AS maven_build
-COPY pom.xml /tmp/
-COPY src /tmp/src/
+COPY /event-api/pom.xml /tmp/
+COPY /event-api/src /tmp/src/
 WORKDIR /tmp/
 RUN mvn package
 
