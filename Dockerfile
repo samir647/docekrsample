@@ -12,7 +12,7 @@ EXPOSE 8080
 
 #default command
 
-
+FROM openjdk:11-jre-slim
 
 COPY  /event-api/target/event-api-0.0.1-SNAPSHOT.jar /data/event-api-0.0.1-SNAPSHOT.jar
 
