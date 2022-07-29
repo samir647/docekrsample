@@ -4,7 +4,8 @@ COPY /event-api/src /tmp/src/
 WORKDIR /tmp/
 
 
-RUN -f mvn package
+
+RUN ["mvn", "package"]
 
 
 EXPOSE 8080
