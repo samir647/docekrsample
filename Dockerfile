@@ -7,8 +7,6 @@ WORKDIR /tmp/
 RUN -f mvn package
 
 
-FROM openjdk
-
 EXPOSE 8080
 
 #default command
