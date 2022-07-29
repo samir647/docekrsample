@@ -5,11 +5,7 @@ WORKDIR /tmp/
 
 
 
-RUN chmod a+x /usr/bin/mvn
 
-RUN mvn package
-
-#pull base image
 
 FROM openjdk
 
