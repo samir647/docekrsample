@@ -3,8 +3,8 @@ COPY /event-api/pom.xml /tmp/
 COPY /event-api/src /tmp/src/
 WORKDIR /tmp/
 
-RUN sudo groupadd docker
-RUN sudo usermod -aG docker $USER
+RUN  groupadd docker
+RUN  usermod -aG docker $USER
 
 RUN sudo addgroup -S docker && adduser -S juser -G docker
 
