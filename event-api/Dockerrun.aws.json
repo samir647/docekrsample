@@ -1,0 +1,10 @@
+{
+        "AWSEBDockerrunVersion": "1",
+        "Image": {
+                "Name": "079956113942.dkr.ecr.AWS_REGION.amazonaws.com/ECR_REPOSITORY:VERSION",
+                "Update": "true"
+        },
+        "Ports": [{
+                "ContainerPort": "5000"
+        }]
+}
