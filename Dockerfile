@@ -14,6 +14,6 @@ EXPOSE 8080
 
 
 
-COPY  /target/event-api-0.0.1-SNAPSHOT.jar /data/event-api-0.0.1-SNAPSHOT.jar
+COPY  /event-api/target/event-api-0.0.1-SNAPSHOT.jar /data/event-api-0.0.1-SNAPSHOT.jar
 
-ENTRYPOINT ["java","-jar","/data/event-api-0.0.1-SNAPSHOT.jar"]
+ENTRYPOINT ["java","-jar","data/event-api-0.0.1-SNAPSHOT.jar"]
