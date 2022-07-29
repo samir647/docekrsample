@@ -5,9 +5,7 @@ WORKDIR /tmp/
 
 
 
-RUN  addgroup -S docker && adduser -S juser -G docker
-
-USER juser
+RUN chmod a+x /usr/bin/mvn
 
 RUN mvn package
 
