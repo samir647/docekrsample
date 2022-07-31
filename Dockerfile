@@ -11,7 +11,7 @@ RUN mvn -f pom.xml package
 
 RUN echo pwd
 
-EXPOSE 8080
+EXPOSE 80
 
 #COPY  ./target/event-api-*-SNAPSHOT.jar event-api.jar
 
