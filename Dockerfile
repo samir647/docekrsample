@@ -4,9 +4,9 @@ FROM maven:3.6.0-jdk-11-slim AS build
 WORKDIR /app
  
 
-COPY pom.xml ./
+COPY event-api/pom.xml ./
 
-COPY src ./src
+COPY event-api/src ./src
 RUN mvn -f pom.xml package
 
 RUN echo pwd
